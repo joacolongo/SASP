@@ -1,4 +1,4 @@
-# Solvent-Accessible Space Path calculator
+# Shortest Accessible Space Path calculator
 
     Joaquin Algorta - Max Planck Institute of Molecular Plant Physiology
 
