@@ -1,4 +1,4 @@
-load /home/jalgorta/MPI/SASD/inputs/6r2g.pdb
+load /home/joaquin/MPIMP/SASP/inputs/6r2g.pdb
 set transparency, 0.5, All
 hide everything, All
 show surface, All

@@ -1,10 +1,10 @@
 #!/bin/python3
 
 # ===================================================================================
-# Name.......: SASD - Shortest Accessible Surface Distance Calculator
+# Name.......: SASP - Shortest Accessible Surface Distance Calculator
 # Authors....: Joaquin Algorta
 # Contact....: joaquin.algorta@mpimp-golm.mpg.de
-# Description: A pipeline to compute the shortest accessible path between two points
+# Description: Pipeline to compute the shortest accessible path between two points
 #              around a molecular surface, avoiding the mesh interior. Useful for
 #              analyzing protein-protein interfaces, ligand accessibility, and
 #              other structural biology applications.
@@ -65,7 +65,7 @@ def main(input_pdb, start_point, end_point, max_distance=1.9, resolution=1, outp
     print(f"Final distance: {_min_dist}")
 
     # save the final distance to a text file
-    with open(os.path.join(output_dir, 'SASD.txt'), 'w') as f:
+    with open(os.path.join(output_dir, 'SASP.txt'), 'w') as f:
         f.write(str(_min_dist) + '\n')
     with open(os.path.join(output_dir, 'euclid.txt'), 'w') as f:
         f.write(str(euclidean_distance)+'\n')
@@ -127,7 +127,7 @@ def main_no_contacts(input_pdb, start_point, end_point, max_distance=1.9, resolu
     print(f"Final distance: {_min_dist}")
 
     # save the final distance to a text file
-    with open(os.path.join(output_dir, 'SASD.txt'), 'w') as f:
+    with open(os.path.join(output_dir, 'SASP.txt'), 'w') as f:
         f.write(str(_min_dist) + '\n')
     with open(os.path.join(output_dir, 'euclid.txt'), 'w') as f:
         f.write(str(euclidean_distance)+'\n')

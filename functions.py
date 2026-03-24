@@ -676,7 +676,7 @@ def write_pml_file(path_points, input_pdb, output_dir=None):
     output file `output_name`.
     """
 
-    with open(f'{output_dir}/SASD.pml', 'w') as pml_file:
+    with open(f'{output_dir}/SASP.pml', 'w') as pml_file:
 
         abs_path = os.path.abspath(input_pdb)
 
@@ -709,7 +709,7 @@ def write_pml_file(path_points, input_pdb, output_dir=None):
         pml_file.write("color red, eucl\n")
 
         # pml_file.write(f"total green dist: {min_dist}")
-    print(f"PML file {output_dir}/SASD.pml has been created.")
+    print(f"PML file {output_dir}/SASP.pml has been created.")
 
 
 def detect_chain_contacts(input_pdb, contact_distance=4.0):
