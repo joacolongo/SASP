@@ -1,4 +1,4 @@
-# Solvent Accessible Surface Distance Calculator
+# Solvent Accessible Space Path calculator
 
     Joaquin Algorta - Max Planck Institute of Molecular Plant Physiology
 
@@ -51,9 +51,9 @@ Optional Arguments
 * --just_dist: Only compute and save distances, skip visualization
 
 Output
-* SASD.txt: Shortest accessible surface distance
+* SASP.txt: Shortest accessible surface distance
 * euclid.txt: Euclidean distance between the two points
-* SASD.pml: PyMOL script for visualization
+* SASP.pml: PyMOL script for visualization
 
 
 ## Requirements
